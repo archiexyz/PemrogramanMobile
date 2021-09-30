@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="23dp"
+        android:text="NIM : A11.2020.13140" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="42dp"
+        android:text="Nama : Arvin Chiendra Wijaya" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="62dp"
+        android:text="Alamat : Kemayoran,DKI Jakarta,Indonesia "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="81dp"
+        android:text="Telepon : 087780195781"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:text="Email : 111202013140@mhs.dinus.ac.id" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="237dp"
+        android:layout_height="221dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        app:srcCompat="@drawable/lain_lain" />
+
+
+</RelativeLayout>
