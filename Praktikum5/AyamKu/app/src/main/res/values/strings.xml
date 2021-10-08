@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AyamKu</string>
+    <string-array name="ayam_label">
+        <item>Ayam 1</item>
+        <item>Ayam 2</item>
+        <item>Ayam 3</item>
+        <item>Ayam 4</item>
+        <item>Ayam 5</item>
+        <item>Ayam 6</item>
+        <item>Ayam 7</item>
+        <item>Ayam 8</item>
+    </string-array>
+    <string name="ayam_info_placeholder">Harga</string>
+    <string name="ayam_image">Ayam Image</string>
+    <string name="filler_text">Ini Ayam Goreng</string>
+
+    <string-array name="ayam_info">
+        <item>Rp 110.000</item>
+        <item>Rp 120.000</item>
+        <item>Rp  80.000</item>
+        <item>Rp  85.000</item>
+        <item>Rp  95.000</item>
+        <item>Rp  90.000</item>
+        <item>Rp 100.000</item>
+        <item>Rp 105.000</item>
+    </string-array>
+
+    <array name="ayam_images">
+        <item>@drawable/ayam1</item>
+        <item>@drawable/ayam2</item>
+        <item>@drawable/ayam3</item>
+        <item>@drawable/ayam4</item>
+        <item>@drawable/ayam5</item>
+        <item>@drawable/ayam6</item>
+        <item>@drawable/ayam7</item>
+        <item>@drawable/ayam8</item>
+    </array>
+</resources>
