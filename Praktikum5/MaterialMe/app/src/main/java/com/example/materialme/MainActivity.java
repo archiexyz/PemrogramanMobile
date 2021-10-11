@@ -10,73 +10,72 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.Collections;
 
-    public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-        private RecyclerView mRecyclerView;
-        private ArrayList<Sport> mSportsData;
-        private SportsAdapter mAdapter;
+    private RecyclerView mRecyclerView;
+    private ArrayList<Sport> mSportsData;
+    private SportsAdapter mAdapter;
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-            mRecyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        mRecyclerView = (RecyclerView)findViewById(R.id.recyclerView);
 
-            mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-            mSportsData = new ArrayList<>();
+        mSportsData = new ArrayList<>();
 
-            mAdapter = new SportsAdapter(this, mSportsData);
-            mRecyclerView.setAdapter(mAdapter);
+        mAdapter = new SportsAdapter(this, mSportsData);
+        mRecyclerView.setAdapter(mAdapter);
 
-            initializeData();
+        initializeData();
 
-            ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback
-                    (ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT | ItemTouchHelper.DOWN
-                            | ItemTouchHelper.UP, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+        ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback
+                (ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT | ItemTouchHelper.DOWN
+                    | ItemTouchHelper.UP, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
 
-                @Override
-                public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder,
-                                      RecyclerView.ViewHolder target) {
+            @Override
+            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder,RecyclerView.ViewHolder target) {
 
-                    int from = viewHolder.getAdapterPosition();
-                    int to = target.getAdapterPosition();
+                int from = viewHolder.getAdapterPosition();
+                int to = target.getAdapterPosition();
 
-                    Collections.swap(mSportsData, from, to);
-                    mAdapter.notifyItemMoved(from, to);
-                    return true;
-                }
-
-                @Override
-                public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-
-                    mSportsData.remove(viewHolder.getAdapterPosition());
-
-                    mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
-                }
-            });
-
-            helper.attachToRecyclerView(mRecyclerView);
-        }
-
-        private void initializeData() {
-            String[] sportsList = getResources().getStringArray(R.array.sports_titles);
-            String[] sportsInfo = getResources().getStringArray(R.array.sports_info);
-            TypedArray sportsImageResources = getResources().obtainTypedArray(R.array.sports_images);
-            mSportsData.clear();
-
-            for(int i=0; i<sportsList.length; i++){
-                mSportsData.add(new Sport(sportsList[i], sportsInfo[i],
-                        sportsImageResources.getResourceId(i,0)));
+                Collections.swap(mSportsData, from, to);
+                mAdapter.notifyItemMoved(from, to);
+                return true;
             }
 
-            sportsImageResources.recycle();
+            @Override
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
 
-            mAdapter.notifyDataSetChanged();
-        }
+            mSportsData.remove(viewHolder.getAdapterPosition());
 
-        public void resetSports(View view) {
-            initializeData();
-        }
+            mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+            }
+        });
+
+        helper.attachToRecyclerView(mRecyclerView);
     }
+
+    private void initializeData() {
+        String[] sportsList = getResources().getStringArray(R.array.sports_titles);
+        String[] sportsInfo = getResources().getStringArray(R.array.sports_info);
+        TypedArray sportsImageResources = getResources().obtainTypedArray(R.array.sports_images);
+        mSportsData.clear();
+
+        for(int i=0; i<sportsList.length; i++){
+            mSportsData.add(new Sport(sportsList[i], sportsInfo[i],
+                    sportsImageResources.getResourceId(i,0)));
+            }
+
+        sportsImageResources.recycle();
+
+        mAdapter.notifyDataSetChanged();
+    }
+
+    public void resetSports(View view) {
+        initializeData();
+    }
+}
