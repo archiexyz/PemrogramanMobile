@@ -123,7 +123,7 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(smsIntent);
                 break;
             case R.id.menuLokasi:
-                String location = "Jalan Haji Ung No L3";
+                String location = "Desa Tempellemahbang";
                 Uri uri = Uri.parse("geo:0,0?q="+ location);
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);

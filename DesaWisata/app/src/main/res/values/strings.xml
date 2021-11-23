@@ -1,33 +1,33 @@
 <resources>
-    <string name="app_name" translatable="false">Desa Wisata</string>
+    <string name="app_name">Desa Wisata</string>
 
-    <string name="detailProduk1" translatable="false">
+    <string name="detailProduk1">
         Waduk yang terletak di desa Tempellemahbang ini menjadi destinasi favorit warga Jawa Tengah dan sekitarnya.
         Waduk ini juga menjadi sumber perairan masyarakat desa Tempellemahbang dan didekat waduk ini terdapat bukit Seloparang,
         yang juga menarik perhatian wisatawan lokal yang datang berkunjung.
     </string>
 
-    <string name="detailProduk2" translatable="false">
+    <string name="detailProduk2">
        Camp ground merupakan istilah umum di dunia pecinta alam untuk menyebut bumi perkemahan. Tempat ini merupakan lokasi untuk mendirikan tenda dan melakukan kegiatan berkemah, berupa ruang luas di luar ruangan.
     </string>
 
-    <string name="detailProduk3" translatable="false">
+    <string name="detailProduk3">
         Atraksi ayunan angkasa ini merupakan permainan yang terbuat dari tali tambang yang tebal, diikatkan pada sebatang pohon. Sebelum diayun, petugas yang ada di sana akan membantu para pengunjung memastikan semua perlengkapan keamanannya sudah siap.
     </string>
 
-    <string name="detailProduk4" translatable="false">
+    <string name="detailProduk4">
         Flying Fox merupakan permainan meluncur dari sebuah pohon dengan menggunakan Sling Baja. Permainan ini melatih keberanian dan ketegasan dalam mengambil keputusan, karena sekalipun sudah menggunakan alat pengamanan yang Optimal peserta akan bertarung dulu dengan rasa takutnya sebelum akhirnya memutuskan untuk melompat. Umumnya setelah meluncur sensasinya yang luar biasa membuat kebanyakan peserta ingin mengulanginya lagi.
     </string>
 
-    <string name="detailProduk5" translatable="false">
+    <string name="detailProduk5">
         Bersepeda di udara dengan seutas tali sebagai medan perjalanannya dan pemandangan indah sebagai panoramanya.
     </string>
 
-    <string name="detailProduk6" translatable="false">
+    <string name="detailProduk6">
         Di tempat wisata alam, para pecinta wisata alam bisa menikmati pemandangan alam yang masih sangat alami. Diatas gardu pandang, anda bisa melihat luas hutan yang hijau dengan hawa yang sejuk. Suguhan pemandangan alam sekitar dan indahnya pemandangan pegunungan lereng muria bisa membuat anda semakin terpukai akan keelokannya.
     </string>
 
-    <string name="detailProduk7" translatable="false">
+    <string name="detailProduk7">
         Homestay adalah salah satu bentuk penginapan yang populer. Para pengunjung atau tamu menginap di kediaman penduduk setempat di kota tempat mereka bepergian.
     </string>
 </resources>
